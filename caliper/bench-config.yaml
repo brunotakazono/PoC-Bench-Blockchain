@@ -1,0 +1,17 @@
+test:
+  name: Confidential Embedding Benchmark
+  description: Caliper + FastAPI + run_all
+  workers:
+    type: local
+    number: 1
+
+  rounds:
+    - label: run-all-once
+      txNumber: 1
+      rateControl:
+        type: fixed-load
+        opts:
+          tps: 1
+      workload:
+        module: benchmarks/scenario/simple/confidentialWorkload.js
+        arguments: {}

@@ -1,0 +1,17 @@
+[project]
+name = "poc-computacao-confidencial"
+version = "0.1.0"
+description = "Benchmark de embeddings CPU-only com bge-m3"
+readme = "README.md"
+requires-python = ">=3.10,<3.13"
+dependencies = [
+    "fastapi>=0.133.0",
+    "numpy>=1.26",
+    "python-dotenv>=1.0.1",
+    "sentence-transformers>=3.0.1",
+    "torch==2.6.0+cpu",
+    "uvicorn>=0.41.0",
+]
+
+[tool.uv]
+extra-index-url = ["https://download.pytorch.org/whl/cpu"]

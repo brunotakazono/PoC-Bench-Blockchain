@@ -1,0 +1,25 @@
+# === Dependências ===
+**/node_modules/
+**/__pycache__/
+**/.venv/
+**/.uv/
+
+# === Hyperledger Fabric (O GRANDE VILÃO) ===
+# Bloqueia a pasta inteira, não importa onde ela esteja
+**/fabric-samples/
+install-fabric.sh
+
+# === Configurações de Ambiente (WSL) ===
+.nvm/
+.npm/
+.bash_history
+.bash_logout
+.profile
+.zshrc
+.sudo_as_admin_successful
+.motd_shown
+
+# === Resultados e Logs ===
+**/results/
+*.log
+api_output.log

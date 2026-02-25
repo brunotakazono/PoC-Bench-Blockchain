@@ -1,0 +1,20 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+.env
+.hf-cache/
+.joblib/
+.uv-cache/
+.uv-python/
+results/
+reports/
+data/*
+!data/corpus.jsonl
+!data/corpus.sha256
